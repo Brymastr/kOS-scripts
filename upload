@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+scp -r . brycen@192.168.0.119:/Users/Brycen/Documents/Projects/kOS/
