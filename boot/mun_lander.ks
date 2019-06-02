@@ -1,11 +1,12 @@
 // Landing Burn
 
 // Configuration
-set radarOffset to 1.26493.                                     // Measure "alt:radar" of the vehicle when landed
+set radarOffset to 4.26493.                                     // Measure "alt:radar" of the vehicle when landed
 
-wait until alt:radar > 10000.
-print "Liftoff success. Sleeping until Mun landing".
-wait until alt:radar < 10000.
+set a to 30000.
+wait until alt:radar > a.
+print "Liftoff success. Sleeping until " + a + "m above Mun surface".
+wait until alt:radar < a.
 
 
 // Physics
